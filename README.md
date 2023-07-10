@@ -7,8 +7,8 @@ Welcome to the Weather App! This web application allows you to check the weather
 - **Home:** Get an overview of the weather in your area.
 - **Forecast:** View the weather forecast for up to 7 days.
 - **Temperature Converter:** Convert temperatures between Celsius and Fahrenheit.
-- **Sign Up:** Create an account to personalize your experience (coming soon).
-- **Login:** Access your account to save preferences and customize the app (coming soon).
+- **Sign Up:** Create an account to personalize your experience.
+- **Login:** Access your account to save preferences and customize the app.
 
 ## Technologies Used
 
@@ -23,8 +23,6 @@ Welcome to the Weather App! This web application allows you to check the weather
 To get a local copy up and running, follow these simple steps:
 
 1. Clone the repository:
-   git clone https://github.com/your-username/weather-app.git
 2. Navigate to the project directory:
-   cd weather-app
 3. Open the index.html file in your preferred web browser.
 
