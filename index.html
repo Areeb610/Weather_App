@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather Website</title>
+  <script src = "script.js"></script>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-left">
+      <h1>Weather App</h1>
+    </div>
+    <div class="navbar-right">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="forecast.html">Forecast</a></li>
+        <li><a href="tempconvert.html">Temp Converter</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <h1>Weather Website</h1>
+
+ 
+  <div class="search-form-row">
+    <div class="search-form">
+      <input type="text" id="city1" class="search-input" placeholder="Enter city name">
+      <button onclick="searchWeather(1)" class="search-button">Search</button>
+    </div>
+
+    <div class="search-form">
+      <input type="text" id="city2" class="search-input" placeholder="Enter city name">
+      <button onclick="searchWeather(2)" class="search-button">Search</button>
+    </div>
+
+    <div class="search-form">
+      <input type="text" id="city3" class="search-input" placeholder="Enter city name">
+      <button onclick="searchWeather(3)" class="search-button">Search</button>
+    </div>
+
+    <div class="search-form">
+      <input type="text" id="city4" class="search-input" placeholder="Enter city name">
+      <button onclick="searchWeather(4)" class="search-button">Search</button>
+    </div>
+
+    <div class="search-form">
+      <input type="text" id="city5" class="search-input" placeholder="Enter city name">
+      <button onclick="searchWeather(5)" class="search-button">Search</button>
+    </div>
+  </div>
+
+  <div class="city-card-row">
+    <div id="cityCard1" class="city-card">
+      <div class="city-name">City Name</div>
+      <div id="cityWeather1" class="city-weather">Loading...</div>
+      <div class="city-details">
+        <div class="detail">
+          <span class="detail-label">Temperature:</span>
+          <span class="detail-value" id="cityTemperature1">-</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Humidity:</span>
+          <span class="detail-value" id="cityHumidity1">-</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Wind Speed:</span>
+          <span class="detail-value" id="cityWindSpeed1">-</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Weather:</span>
+          <span class="detail-value" id="cityWeatherDesc1">-</span>
+        </div>
+      </div>
+    </div>
+  
+    <div id="cityCard2" class="city-card">
+      <div class="city-name">City Name</div>
+      <div id="cityWeather2" class="city-weather">Loading...</div>
+      <div class="city-details">
+        <div class="detail">
+          <span class="detail-label">Temperature:</span>
+          <span class="detail-value" id="cityTemperature2">-</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Humidity:</span>
+          <span class="detail-value" id="cityHumidity2">-</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Wind Speed:</span>
+          <span class="detail-value" id="cityWindSpeed2">-</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Weather:</span>
+          <span class="detail-value" id="cityWeatherDesc2">-</span>
+        </div>
+      </div>
+    </div>
+  
+    <div id="cityCard3" class="city-card">
+      <div class="city-name">City Name</div>
+      <div id="cityWeather3" class="city-weather">Loading...</div>
+      <div class="city-details">
+        <div class="detail">
+          <span class="detail-label">Temperature:</span>
+          <span class="detail-value" id="cityTemperature3">-</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Humidity:</span>
+          <span class="detail-value" id="cityHumidity3">-</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Wind Speed:</span>
+          <span class="detail-value" id="cityWindSpeed3">-</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Weather:</span>
+          <span class="detail-value" id="cityWeatherDesc3">-</span>
+        </div>
+      </div>
+    </div>
+  
+    <div id="cityCard4" class="city-card">
+      <div class="city-name">City Name</div>
+      <div id="cityWeather4" class="city-weather">Loading...</div>
+      <div class="city-details">
+        <div class="detail">
+          <span class="detail-label">Temperature:</span>
+          <span class="detail-value" id="cityTemperature4">-</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Humidity:</span>
+          <span class="detail-value" id="cityHumidity4">-</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Wind Speed:</span>
+          <span class="detail-value" id="cityWindSpeed4">-</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Weather:</span>
+          <span class="detail-value" id="cityWeatherDesc4">-</span>
+        </div>
+      </div>
+    </div>
+  
+    <div id="cityCard5" class="city-card">
+      <div class="city-name">City Name</div>
+      <div id="cityWeather5" class="city-weather">Loading...</div>
+      <div class="city-details">
+        <div class="detail">
+          <span class="detail-label">Temperature:</span>
+          <span class="detail-value" id="cityTemperature5">-</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Humidity:</span>
+          <span class="detail-value" id="cityHumidity5">-</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Wind Speed:</span>
+          <span class="detail-value" id="cityWindSpeed5">-</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Weather:</span>
+          <span class="detail-value" id="cityWeatherDesc5">-</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    </div>
+
+</body>
+</html>
